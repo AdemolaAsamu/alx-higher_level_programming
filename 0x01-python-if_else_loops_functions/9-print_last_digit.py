@@ -7,3 +7,4 @@ def print_last_digit(number):
     else:
         x = (-1 * x) % 10
     return x
+    print("{}".format(x), end="")
