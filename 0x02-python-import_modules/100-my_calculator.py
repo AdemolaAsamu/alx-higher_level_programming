@@ -3,7 +3,7 @@ if __name__ == '__main__':
     import sys
     from calculator_1 import add, sub, mul, div
     size = len(sys.argv) != 4:
-        print("Usage: ./100-my_calculator.py <a> <symbol> <b>")
+        print("Usage: ./100-my_calculator.py <a> <sym> <b>")
         sys.exit(1)
     a = int(sys.argv[1])
     sym = sys.argv[2]
