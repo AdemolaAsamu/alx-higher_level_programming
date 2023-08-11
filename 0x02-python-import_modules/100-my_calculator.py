@@ -7,15 +7,15 @@ if __name__ == '__main__':
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     a = int(sys.argv[1])
-    sym = sys.argv[2]
+    operator = sys.argv[2]
     b = int(sys.argv[3])
-    if sym == '+':
+    if operator == '+':
         out = add(a, b)
-    elif sym == '-':
+    elif operator == '-':
         out = sub(a, b)
-    elif sym == '*':
+    elif operator == '*':
         out = mul(a, b)
-    elif sym == '/':
+    elif operator == '/':
         out = div(a, b)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
