@@ -5,7 +5,7 @@ if __name__ == "__main__":
     if var == 1:
         print("{:d} arguments.".format(var - 1))
     elif var == 2:
-        print("{:d} argument:".format(var - 1))
+        print("{:d} arguments:".format(var - 1))
         print("{:d}: {}".format(var - 1, argv[1]))
     else:
         print("{:d} arguments:".format(var - 1))
