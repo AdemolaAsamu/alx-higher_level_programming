@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-from sys import argv
-
 if __name__ != "__main__":
     exit()
-
+from sys import argv
 var = len(argv)
 if var == 1:
     var = 0
