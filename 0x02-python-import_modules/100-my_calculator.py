@@ -12,15 +12,19 @@ if __name__ == '__main__':
     if operator == '+':
         out = add(a, b)
         print(f"{a} {operator} {b} = {out}")
+        exit(0)
     elif operator == '-':
         out = sub(a, b)
         print(f"{a} {operator} {b} = {out}")
+        exit(0)
     elif operator == '*':
         out = mul(a, b)
         print(f"{a} {operator} {b} = {out}")
+        exit(0)
     elif operator == '/':
         out = div(a, b)
         print(f"{a} {operator} {b} = {out}")
+        exit(0)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        sys.exit(1)
+        exit(1)
