@@ -4,7 +4,6 @@ if __name__ == "__main__":
 
     var = len(argv)
     if var == 1:
-        var = 0
         print("{} arguments.".format(var - 1) if var > 0
                 else "{} arguments.".format(var))
     if var > 0:
