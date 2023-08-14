@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * is_palindrome - Checks if a list is a palindrome
  * @head: double pointer to head list
@@ -6,24 +6,25 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *lists;
-	int holder, idx, av, ar;
+	listint_t *current;
+	int holder[1000];
+	int idx, av, ar;
 
-	lists = *head;
+	current = *head;
 	idx = 0;
 	av = 0;
 	if (*head == NULL)
 		return (1);
-	while (lists != NULL)
+	while (current != NULL)
 	{
-		holder[idx] = holder->n;
+		holder[idx] = current->n;
 		idx += 1;
-		holder = holder->next;
+		current = current->next;
 	}
 	if (idx == 1)
 		return (1);
 	ar = idx - 1;
-	while (av < idx / 2)
+	while (av < (idx / 2))
 	{
 		if (holder[av] != holder[ar])
 			return (0);
