@@ -1,0 +1,7 @@
+#!/bin/bash
+git pull
+git add . 
+echo "Enter the comment"
+read message
+git commit -m "$message"
+git push
