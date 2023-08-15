@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
     new_list = list(my_list)
-    x  = len(my_list) - 1
+    x = len(my_list) - 1
     if idx < 0:
         return new_list
     elif idx > x:
