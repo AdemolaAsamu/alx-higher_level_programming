@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 from sys import argv
+
+
 def retro(*args):
     sum = 0
     size = len(args)
