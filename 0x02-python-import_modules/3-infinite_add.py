@@ -11,5 +11,7 @@ def retro(*args):
         for i in range(0, size):
             sum += int(args[i])
         print("{}".format(sum))
+
+
 if __name__ == '__main__':
     retro(*argv[1:])
