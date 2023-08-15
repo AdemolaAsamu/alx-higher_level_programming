@@ -9,4 +9,3 @@ def no_c(my_string):
         else:
             slit += my_string[j]
     return slit
-
