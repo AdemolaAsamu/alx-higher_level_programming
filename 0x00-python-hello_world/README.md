@@ -11,3 +11,6 @@ This consist of 11 basic tasks & 3 advance tasks
 9. 8-concat_edges -> create new sentences using split function
 10. 9-easter_egg -> This prints the test of thy python poem
 11. 10-check_cycle.c
+
+102-magic_calculation.py 
+100-write.py 
