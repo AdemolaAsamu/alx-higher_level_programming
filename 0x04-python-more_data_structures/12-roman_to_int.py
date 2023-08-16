@@ -13,5 +13,5 @@ def roman_to_int(roman_string):
             intval -= vault.get(roman_string[y])
         else:
             intval += vault.get(roman_string[y])
-    intval += vault.get(roman_string[x]) 
+    intval += vault.get(roman_string[x])
     return intval
