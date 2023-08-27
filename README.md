@@ -1,9 +1,7 @@
 This is the README file for the ALx higer level programming
-AUTHOR
+- AUTHOR : Ademola ASAMU
 
-<Ademola ASAMU>
-
-Starting with the 
+List of Contents of Repository
 
 0x00-python-hello_world
 0x01-python-if_else_loops_functions
