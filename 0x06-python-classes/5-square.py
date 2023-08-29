@@ -42,6 +42,9 @@ class Square:
         else:
             self.__size = value
     def my_print(self):
+        """
+        This is a printer
+        """
         if self.__size == 0:
             print()
         else:
