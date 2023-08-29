@@ -3,6 +3,7 @@
 This is a module that handles square class
 """
 
+
 class Square:
     """
     This is the class for the square
