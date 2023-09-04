@@ -57,7 +57,7 @@ class Rectangle:
                 if i < (self.__height - 1):
                     shape += "#" * self.__width + "\n"
                 else:
-                    shape += "#" * self__width
+                    shape += "#" * self.__width
             return shape
         else:
             return ""
