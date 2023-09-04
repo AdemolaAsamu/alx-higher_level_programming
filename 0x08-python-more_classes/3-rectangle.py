@@ -50,6 +50,17 @@ class Rectangle:
         else:
             self.__height = value
 
+    def __str__(self):
+        if self.__width > 0 and self.__height > 0:
+            shape = ""
+            for i in range(self.__height):
+                if i < (self.__height - 1):
+                    shape += "#" * self.__width + "\n"
+                else:
+                    shape += "#" * self__width
+            return shape
+        else:
+            return ""
     def area(self):
         return self.__width * self.__height
 
