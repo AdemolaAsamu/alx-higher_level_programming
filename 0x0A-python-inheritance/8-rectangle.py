@@ -3,9 +3,8 @@
 This is a module that contains a Class
 Rectangle that Builds on Task 7
 """
-
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """
