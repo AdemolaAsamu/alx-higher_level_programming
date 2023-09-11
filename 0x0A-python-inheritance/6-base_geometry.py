@@ -15,4 +15,5 @@ class BaseGeometry:
         """
         Public instance method area(self)
         """
+
         raise Exception("area() is not implemented")
