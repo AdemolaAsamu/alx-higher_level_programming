@@ -10,7 +10,7 @@ class BaseGeometry:
     """
     This is a Class BaseGgeometry
     """
-    
+
     def area(self):
         """
         Public instance method area(self)
