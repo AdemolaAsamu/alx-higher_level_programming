@@ -3,7 +3,8 @@
 Module executes Class Square which inherits
 from Task 9 Rectangle
 """
-Rectangle = __import__('9-rectangle.py').Rectangle
+
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -16,10 +17,7 @@ class Square(Rectangle):
         Initialises with size
         """
 
-        super().integer_validator("size", size)
+        self.integer_validator("size", size)
+        self.__size = size
 
-    def area(Self):
-        """
-        Calculates the Area
-        """
-        return self.__size * self.__size
+        super().__init__(size, size)
