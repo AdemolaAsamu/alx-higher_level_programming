@@ -11,7 +11,6 @@ def read_file(filename=""):
     a text file
     """
 
-    filetype = 'utf-8'
-    with open(filename, "r", encoding=filetype) as file:
-        holder = file.read()
-        print(holder)
+    with open(filename) as content:
+        for words in content:
+            print(words, end="")
