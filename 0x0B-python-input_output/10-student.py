@@ -4,7 +4,7 @@ Class - Student
 """
 
 
-class Student:
+class Student():
     """
     This is a student class
     """
