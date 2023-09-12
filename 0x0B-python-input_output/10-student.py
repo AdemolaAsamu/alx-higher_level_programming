@@ -22,7 +22,7 @@ class Student:
         Returns the TOC
         """
         toc = self.__dict__
-        if attrs == None:
+        if attrs is None:
             return toc
         elif isinstance(attrs, list):
             new_toc = {}
