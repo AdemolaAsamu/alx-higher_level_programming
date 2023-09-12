@@ -26,7 +26,7 @@ class Student():
             return toc
         elif isinstance(attrs, list):
             new_toc = {}
-            for key, value on toc.items():
+            for key, value in toc.items():
                 if key in attrs:
                     new_toc[key] = value
             return new_toc
