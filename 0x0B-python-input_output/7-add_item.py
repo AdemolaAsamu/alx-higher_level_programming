@@ -12,10 +12,9 @@ def add_and_save_to_list():
    """
    This is the function that adds and saces
    """
-
+   size = len(sys.argv)
    try:
         load_data = load_from_json_file("add_item.json")
-        size = len(sys.argv)
         for arg in range(1, size):
             load_data.append(sys.argv[arg])
         save_to_json_file(load_data, "add_item.json")
@@ -23,8 +22,7 @@ def add_and_save_to_list():
         with open("add_item.json", "w") as content:
             content.write("[]")
         load_data = load_from_json_file("add_item.json")
-        buff = len(sys.argv)
-        for arg in range(1, buff):
+        for arg in range(1, size):
             load_data.append(sys.argv[arg])
         save_to_json_file(load_data, "add_item.json")
 
