@@ -12,6 +12,7 @@ def add_and_save_to_list():
    """
    This is the function that adds and saces
    """
+
    try:
         load_data = load_from_json_file("add_item.json")
         size = len(sys.argv)
