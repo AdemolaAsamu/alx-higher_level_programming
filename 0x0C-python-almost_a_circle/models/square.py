@@ -28,10 +28,23 @@ clase Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """
+        property setter
+        """
         self.width = value
         self.height = value
 
 
+    def to_dictionary(self):
+        """
+        Return the dictnarr
+        """
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
     def __str__(self):
         """
         Returns the str and print representation
