@@ -135,3 +135,14 @@ class Rectangle:
                 setattr(self, attr, kwards[attr])
         else:
             raise ValueError("update: positional and/or keyword arg required")
+
+    def to_dictionary(self):
+        """
+        This gets the dict representation for a rectangle
+        """
+
+        return {
+                "id": self.id, "width": self.width,
+                "height": self.height, "x": self.x,
+                "y": self.y
+        }
