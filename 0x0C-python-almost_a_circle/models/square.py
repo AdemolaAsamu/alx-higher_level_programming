@@ -35,6 +35,21 @@ clase Square(Rectangle):
         self.height = value
 
 
+    def update(self, *args, **kwargs):
+        """
+        Update status
+        """
+        arg = ["id", "size", "x", "y"]
+        val = len(args)
+        if args and val > 0:
+            for num in range(val):
+                setattr(self, arg[i], args[i])
+        elif kwargs:
+            for attr in kwargs:
+                setattr(self, attr, kwargs[attr])
+        else:
+            raise ValueError("update: positional and/or keyword arg required")
+
     def to_dictionary(self):
         """
         Return the dictnarr
