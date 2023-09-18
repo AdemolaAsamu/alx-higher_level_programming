@@ -3,6 +3,7 @@
 This is Module for the First
 Rectangle
 """
+from models.base import Base
 
 
 class Rectangle:
@@ -118,3 +119,19 @@ class Rectangle:
     p = x + "#" * self.__width
     for num in range(self.__height):
         print(p)
+
+    def update(self, *args, **kwargs):
+        """
+        update to Rectangle Attributes
+        """
+
+        args = ["id", "width", "height", "x", "y"]
+        val = len(args)
+        if args and val > 0:
+            for i in range(val):
+                setattr(self, arg[i], args[i])
+        elif kwargs:
+            for attr in kwargs:
+                setattr(self, attr, kwards[attr])
+        else:
+            raise ValueError("update: positional and/or keyword arg required")
