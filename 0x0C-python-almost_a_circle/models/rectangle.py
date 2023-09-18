@@ -21,3 +21,100 @@ class Rectangle:
         self.x = x
         self.y = y
         super().__init__(id)
+
+    def __str__(self):
+        """
+        string representation of instances
+        """
+        return (f"[{self.__class__.__name__}] ({self.id})"
+                f"{self.__x}/{self.__y} - self.__width}/{self.__height}")
+
+    @property
+    def width(self):
+        """
+        property getter
+        """
+        return self.__width
+
+    @width.setter
+    def width(self, width):
+        """
+        property setter for width
+        """
+
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = width
+
+    @property
+    def height(self):
+        """
+        property getter for height
+        """
+        return self.__height
+
+    @height.setter
+    def height(self, height):
+        """
+        property setter for height
+        """
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height <= 0:
+            rasie ValueError("height must be > 0")
+        self.__height = height
+
+    @property
+    def x(self):
+        """
+        Property getter for x
+        """
+        return self.__x
+
+    @x.setter
+    def x(self, x):
+        """
+        property setter for x
+        """
+        if type(x) != int:
+            raise TypeError("x must be an integer")
+        if x < 0:
+            raise ValueError("x must be >= 0")
+        self.__x  = x
+
+    @property
+    def y(self):
+        """
+        property getter for y
+        """
+        return self.__y
+
+    @y.setter
+    def y(self, y):
+        """
+        setter for y variable
+        """
+        if type(y) != int:
+            rasie TypeError("y must be an integer")
+        if y < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = y
+
+    def area(self):
+        """
+        function that calculates area or rectablge
+        """
+        return self.__width * self.__height
+
+    def display(self)
+    """
+    printing the rectangle in form of a string
+    """
+    for num in range(self.__y):
+        print("")
+    x = " " * self.__x
+    p = x + "#" * self.__width
+    for num in range(self.__height):
+        print(p)
